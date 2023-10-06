@@ -15,4 +15,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "ItemXplorerTeam1"
 include(":app")
- 
