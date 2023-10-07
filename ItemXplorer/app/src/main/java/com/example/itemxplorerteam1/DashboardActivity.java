@@ -15,6 +15,8 @@ public class DashboardActivity extends AppCompatActivity {
         setContentView(R.layout.activity_dashboard);
 
         Button button = findViewById(R.id.removeItemsBTN);
+        Button addItembutton=findViewById(R.id.addItemsBTN);
+        Button viewbtn = findViewById(R.id.viewItemsBTN);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -26,5 +28,33 @@ public class DashboardActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+
+
+        addItembutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Create an Intent to navigate to the LoginActivity
+                Intent intent = new Intent(DashboardActivity.this, AddItemActivity.class);
+
+                // Start the LoginActivity
+                startActivity(intent);
+            }
+        });
+
+        viewbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Create an Intent to navigate to the LoginActivity
+                Intent intent = new Intent(DashboardActivity.this, ViewItemActivity.class);
+
+                // Start the LoginActivity
+                startActivity(intent);
+            }
+        });
+
+
+
     }
 }
