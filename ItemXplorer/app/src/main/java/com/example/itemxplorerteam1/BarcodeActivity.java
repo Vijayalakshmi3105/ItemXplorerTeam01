@@ -7,20 +7,20 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class RemoveItemsActivity extends AppCompatActivity {
+public class BarcodeActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_remove_items);
+        setContentView(R.layout.activity_barcode);
 
-        Button qrButton = findViewById(R.id.scanBTN);
+        Button qrButton=findViewById(R.id.qrButton);
 
         qrButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // Create an Intent to navigate to the LoginActivity
-                Intent intent = new Intent(RemoveItemsActivity.this, ViewItemActivity.class);
+                Intent intent = new Intent(BarcodeActivity.this, ViewItemActivity.class);
 
                 // Start the LoginActivity
                 startActivity(intent);
