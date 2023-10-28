@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
     <list default="true" id="5ca50bb4-c6b6-427d-9621-2a811bb83b0f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
-=======
-    <list default="true" id="5ca50bb4-c6b6-427d-9621-2a811bb83b0f" name="Changes" comment="" />
->>>>>>> parent of 37baaba (UI updated and functionality added for Register and Main Activities (Vijayalakshmi Sankati))
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,11 +29,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
     "cidr.known.project.marker": "true",
-<<<<<<< HEAD
     "last_opened_file_path": "C:/Users/S560190/Downloads/ItemXplorerTeam01/ItemXplorerTeam01"
-=======
-    "last_opened_file_path": "C:/Users/S560190/Desktop/Android/ItemXplorerTeam01/ItemXplorer"
->>>>>>> parent of 37baaba (UI updated and functionality added for Register and Main Activities (Vijayalakshmi Sankati))
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
