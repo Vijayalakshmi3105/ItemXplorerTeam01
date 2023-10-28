@@ -7,20 +7,20 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class RegisterActivity extends AppCompatActivity {
+public class RemoveItemsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register);
+        setContentView(R.layout.activity_remove_items);
 
-        Button registerButton = findViewById(R.id.signupBTN);
+        Button qrButton = findViewById(R.id.scanBTN);
 
-        registerButton.setOnClickListener(new View.OnClickListener() {
+        qrButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // Create an Intent to navigate to the LoginActivity
-                Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
+                Intent intent = new Intent(RemoveItemsActivity.this, ViewItemActivity.class);
 
                 // Start the LoginActivity
                 startActivity(intent);

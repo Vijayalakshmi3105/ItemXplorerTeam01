@@ -1,8 +1,5 @@
 plugins {
     id("com.android.application")
-    id("com.google.gms.google-services")
-//    id ("com.google.gms.google-services' version '4.4.0' apply false")
-//    id ("com.google.gms.google-services")
 }
 
 android {
@@ -38,13 +35,6 @@ dependencies {
 
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.9.0")
-    implementation("com.google.firebase:firebase-auth:21.0.1")
-    implementation("com.google.firebase:firebase-bom:32.4.0")
-    implementation("com.google.firebase:firebase-database:20.0.0")
-    implementation ("com.firebaseui:firebase-ui-database:8.0.0")
-    implementation ("com.google.mlkit:barcode-scanning:16.2.0")
-    implementation ("com.firebaseui:firebase-ui-database:8.0.0")
-//    implementation("com.google.firebase:firebase-analytics")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")

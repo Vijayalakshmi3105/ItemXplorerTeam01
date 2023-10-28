@@ -1,40 +1,40 @@
 package com.example.itemxplorerteam1;
 
-import android.content.Intent;
-
-import android.os.Bundle;
-import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    private FirebaseAuth auth;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        auth = FirebaseAuth.getInstance();
+        Button loginButton = findViewById(R.id.loginBTN);
+        Button RegisterButton = findViewById(R.id.RegisterBTN);
 
-        FirebaseUser user = auth.getCurrentUser();
+        loginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Create an Intent to navigate to the LoginActivity
+                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
 
-        if(user != null){
-            finish();
-            startActivity(new Intent(this, dashboardActivity.class));
-        }
+                // Start the LoginActivity
+                startActivity(intent);
+            }
+        });
+        RegisterButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Create an Intent to navigate to the RegisterActivity
+                Intent intent = new Intent(MainActivity.this, RegisterActivity.class);
 
-    }
-
-
-    public void login (View view)
-    {
-
-        startActivity(new Intent(this,LoginActivity.class));
-    }
-    public void register (View view)
-    {
-        startActivity(new Intent(this,RegisterActivity.class));
+                // Start the RegisterActivity
+                startActivity(intent);
+            }
+        });
     }
 }
-
