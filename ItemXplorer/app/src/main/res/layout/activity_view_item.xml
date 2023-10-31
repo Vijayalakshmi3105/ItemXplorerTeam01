@@ -1,222 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ViewItemActivity"
-    >
-<!--    android:background="@drawable/gradient"-->
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:orientation="horizontal"
-        android:id="@+id/head"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="30dp"
-        >
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            android:src="@drawable/scan"
-            android:layout_marginRight="20dp"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Scan Items"
-            android:textSize="30sp"
-            android:layout_marginTop="5dp"
-            android:textColor="@color/white"
-            />
-        <Button
-            android:text="View all"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:onClick="inventory"
-            >
-
-        </Button>
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/head"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop="20dp"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"
-
-        android:padding="1dp"
-        android:layout_marginLeft="60dp"
-        android:id="@+id/notHead"
-        >
-<!--        android:background="@drawable/border_linear"-->
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:hint="Enter number or scan"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white"
-            android:id="@+id/Num"
-            />
-        <Button
-            android:layout_marginLeft="20dp"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-
-            android:backgroundTint="@color/white"
-            android:layout_marginRight="20dp"
-            android:layout_marginTop="5dp"
-            android:onClick="BarCodePadho"
-            />
-<!--        android:background="@drawable/baseline_camera_alt_24"-->
-
-    </LinearLayout>
-    <Button
-
-        app:layout_constraintTop_toBottomOf="@+id/notHead"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_marginLeft="120dp"
-        android:text="Search"
-        android:backgroundTint="@color/white"
-        android:textColor="@color/black"
-
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:onClick="searchKaro"
-        />
+    android:orientation="vertical"
+    tools:context=".ViewItemActivity">
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop="180dp"
-        >
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <TextView
-            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/viewInventory"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Name: "
-            android:textColor="@color/white"
-            android:textSize="18sp"
-            android:layout_marginLeft="30dp"
-            />
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+
+            android:gravity="left"
+            android:text="Items Count  "
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/nameTextView"
-            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/totalnoitem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=""
-            android:textColor="@color/white"
-            android:textSize="18sp" />
+
+            android:layout_marginTop="10dp"
+            android:text="0"
+            android:textColor="#FBF5F5"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text=" Total Sum   "
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/totalsum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:text="0"
+            android:textColor="#FAFAFA"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:gravity="right"
+            android:text="$"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+
+
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
 
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:orientation="horizontal"
 
-        android:layout_marginTop="230dp"
-        >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViews"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp" />
 
-            android:textColor="@color/white"
-            android:text="Location: "
 
-            android:layout_marginLeft="30dp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            android:textSize="18sp" />
-        <TextView
-            android:id="@+id/locTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            android:textColor="@color/white"
-            android:text=""
-
-            app:layout_constraintLeft_toLeftOf="parent"
-            android:textSize="18sp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="280dp"
-
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:orientation="horizontal"
-        >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:text="Price: "
-
-            android:layout_marginLeft="30dp"
-            android:textSize="18sp" />
-        <TextView
-            android:id="@+id/priceTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:text=" "
-            android:textSize="18sp" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:orientation="horizontal"
-        android:layout_marginTop="330dp"
-        >
-        <TextView
-            app:layout_constraintTop_toTopOf="parent"
-            android:textColor="@color/white"
-            app:layout_constraintLeft_toLeftOf="parent"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Category: "
-
-            android:layout_marginLeft="30dp"
-            android:textSize="18sp" />
-        <TextView
-            android:id="@+id/catTextView"
-            app:layout_constraintTop_toTopOf="parent"
-            android:textColor="@color/white"
-            app:layout_constraintLeft_toLeftOf="parent"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=" "
-            android:textSize="18sp" />
-    </LinearLayout>
-    <Button
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginBottom="250dp"
-        android:id="@+id/deleteButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Delete"
-        android:onClick="deleteNode"
-        android:visibility="invisible"
-        />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

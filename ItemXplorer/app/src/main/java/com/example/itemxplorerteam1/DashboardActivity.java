@@ -36,7 +36,7 @@ public class DashboardActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Create an Intent to navigate to the LoginActivity
-                Intent intent = new Intent(DashboardActivity.this, AddItemActivity.class);
+                Intent intent = new Intent(DashboardActivity.this, AddActivity.class);
 
                 // Start the LoginActivity
                 startActivity(intent);

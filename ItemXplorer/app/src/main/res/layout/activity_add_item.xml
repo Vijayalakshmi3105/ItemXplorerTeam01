@@ -1,236 +1,187 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddItemActivity">
-<!--    android:background="@drawable/gradient"-->
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            >
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                android:orientation="horizontal"
-                android:id="@+id/head"
-                android:layout_marginTop="30dp"
-                android:layout_marginLeft="60dp"
-                >
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:src="@drawable/product"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Product Details"
-                    android:textColor="@color/white"
-                    android:layout_marginLeft="20dp"
-                    android:textSize="30dp"
-                    />
+    android:orientation="vertical">
 
-            </LinearLayout>
-            <LinearLayout
-                app:layout_constraintTop_toBottomOf="@id/head"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                app:layout_constraintLeft_toLeftOf="parent"
-                android:layout_marginTop="30dp"
-                android:layout_marginLeft="20dp"
-                android:id="@+id/col1"
-                >
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Product"
-                    android:textColor="@color/white"
-                    android:textSize="25sp"
-                    android:layout_marginRight="20dp"
-                    />
-                <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:hint="Enter Product name"
-                    android:textColorHint="@color/white"
-                    android:textSize="25sp"
-                    android:textColor="@color/white"
-                    android:id="@+id/name"
-                    />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="268dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="Product Details"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
-            </LinearLayout>
-            <LinearLayout
-                app:layout_constraintTop_toBottomOf="@id/col1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                app:layout_constraintLeft_toLeftOf="parent"
-                android:layout_marginTop="30dp"
-                android:layout_marginLeft="20dp"
-                android:id="@+id/col2"
-                >
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Category"
-                    android:textColor="@color/white"
-                    android:textSize="25sp"
-                    android:layout_marginRight="35dp"
-                    />
-                <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:hint="Enter Category here"
-                    android:textColorHint="@color/white"
-                    android:textSize="25sp"
-                    android:id="@+id/cat"
-                    android:textColor="@color/white"
-                    />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="45dp"
+        android:layout_height="44dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="1dp"
+        android:layout_toLeftOf="@id/textView" />
 
-            </LinearLayout>
-            <LinearLayout
-                app:layout_constraintTop_toBottomOf="@id/col2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                app:layout_constraintLeft_toLeftOf="parent"
-                android:layout_marginTop="30dp"
-                android:layout_marginLeft="20dp"
-                android:id="@+id/col3"
-                >
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Location"
-                    android:textColor="@color/white"
-                    android:textSize="25sp"
-                    android:layout_marginRight="35dp"
-                    />
-                <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:hint="Enter location here"
-                    android:textColorHint="@color/white"
-                    android:textSize="25sp"
-                    android:id="@+id/loc"
-                    android:textColor="@color/white"
-                    />
-            </LinearLayout>
-            <LinearLayout
-                app:layout_constraintTop_toBottomOf="@id/col3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                app:layout_constraintLeft_toLeftOf="parent"
-                android:layout_marginTop="30dp"
-                android:layout_marginLeft="20dp"
-                android:id="@+id/col4"
-                >
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Price"
-                    android:textColor="@color/white"
-                    android:textSize="25sp"
-                    android:layout_marginRight="75dp"
-                    />
-                <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:hint="Enter Price here"
-                    android:textColorHint="@color/white"
-                    android:textSize="25sp"
-                    android:textColor="@color/white"
-                    android:id="@+id/price"
-                    />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="200dp"
+        android:text="Product"
+        android:textColor="#FFECB3"
+        android:textSize="20dp"
+        android:textStyle="bold" />
 
-            </LinearLayout>
-            <LinearLayout
-                app:layout_constraintTop_toBottomOf="@id/col4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                app:layout_constraintLeft_toLeftOf="parent"
-                android:layout_marginTop="30dp"
-                android:layout_marginLeft="20sp"
-                android:id="@+id/col5"
-                >
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Number"
-                    android:textColor="@color/white"
-                    android:textSize="25sp"
-                    android:layout_marginRight="50dp"
-                    />
-                <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:hint="Enter barcode "
-                    android:textColorHint="@color/white"
-                    android:textSize="25sp"
-                    android:id="@+id/Num"
-                    android:textColor="@color/white"
-                    />
-            </LinearLayout>
-            <Button
-                android:layout_width="150dp"
-                android:layout_height="60dp"
-                app:layout_constraintTop_toBottomOf="@id/col5"
-                android:id="@+id/btn1"
-                app:layout_constraintLeft_toLeftOf="parent"
-                android:gravity="center"
-                android:text="Scan Qr"
-                android:layout_marginLeft="100dp"
-                android:layout_marginTop="20dp"
-                android:textSize="25sp"
-                android:onClick="BarCodePadho"
-                />
-            <Button
-                android:layout_width="150dp"
-                android:layout_height="60dp"
-                app:layout_constraintTop_toBottomOf="@id/btn1"
-                android:id="@+id/btn2"
-                app:layout_constraintLeft_toLeftOf="parent"
-                android:gravity="center"
-                android:text="Add "
-                android:layout_marginLeft="100dp"
-                android:layout_marginTop="20dp"
-                android:textSize="25sp"
-                android:onClick="addKaro"
-                />
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="View Items"
-                app:layout_constraintTop_toBottomOf="@id/btn2"
-                android:layout_marginTop="10dp"
-                android:textSize="20dp"
-                android:backgroundTint="#44769E"
-                android:layout_marginLeft="20dp"
-                app:layout_constraintLeft_toLeftOf="parent"
-                android:onClick="getin"
-                >
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="-60dp"
+        android:text="Category"
+        android:textColor="#FFE0B2"
+        android:textSize="20dp"
+        android:textStyle="bold" />
 
-            </Button>
-            <Button android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Logout"
-                android:onClick="logout"
-                android:layout_marginTop="-50dp"
-                android:layout_marginLeft="250dp"
-                >
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="-60dp"
+        android:text="Location"
+        android:textColor="#FFE0B2"
+        android:textSize="20dp"
+        android:textStyle="bold" />
 
-            </Button>
-        </LinearLayout>
-    </ScrollView>
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="-60dp"
+        android:text="Price"
+        android:textColor="#FFE0B2"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="-60dp"
+        android:text="Number"
+        android:textColor="#FFE0B2"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edititemname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_alignBaseline="@id/textView3"
+        android:layout_alignLeft="@id/editcategory"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="200dp"
+        android:ems="10"
+        android:hint="enter product name"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editcategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edititemname"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginBottom="-60dp"
+        android:layout_toEndOf="@id/textView4"
+        android:ems="10"
+        android:hint="enter product category"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editlocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/editcategory"
+        android:layout_alignBottom="@+id/editcategory"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-60dp"
+        android:ems="10"
+        android:hint="enter location"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/editcategory"
+        android:layout_alignBottom="@+id/editlocation"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-60dp"
+        android:ems="10"
+        android:hint="enter price"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonscan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-90dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Scan Bar/QR Code"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+    <!--    android:layout_alignBottom="@+id/barcodeview"-->
+
+    <Button
+        android:id="@+id/additembuttontodatabase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonscan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-460dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Add Item"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+</RelativeLayout>
