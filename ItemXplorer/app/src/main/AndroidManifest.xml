@@ -25,13 +25,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ForgotPasswordActivity"
+            android:name=".ForgetPasswordActivity"
             android:exported="false" />
         <activity
-            android:name=".DashboardActivity"
+            android:name=".HomePageActivity"
             android:exported="false" />
         <activity
-            android:name=".RegisterActivity"
+            android:name=".UserRegisterActivity"
             android:exported="false" />
         <activity
             android:name=".RemoveItemsActivity"
@@ -43,7 +43,7 @@
             android:name=".AddActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".UserLoginActivity"
             android:exported="false" />
 
         <meta-data

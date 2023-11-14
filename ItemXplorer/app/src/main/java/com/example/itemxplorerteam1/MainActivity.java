@@ -1,7 +1,7 @@
 package com.example.itemxplorerteam1;
 
 import android.content.Intent;
-import androidx.annotation.NonNull;
+
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         if(user != null){
             finish();
-            startActivity(new Intent(this, DashboardActivity.class));
+            startActivity(new Intent(this, HomePageActivity.class));
         }
 
     }
@@ -32,11 +32,11 @@ public class MainActivity extends AppCompatActivity {
     public void login (View view)
     {
 
-        startActivity(new Intent(this,LoginActivity.class));
+        startActivity(new Intent(this, UserLoginActivity.class));
     }
     public void register (View view)
     {
-        startActivity(new Intent(this,RegisterActivity.class));
+        startActivity(new Intent(this, UserRegisterActivity.class));
     }
 }
 
