@@ -32,12 +32,14 @@
         android:layout_centerHorizontal="true"
         android:textColorHint="#ffff"
         android:layout_marginBottom="-80dp"
-        android:ems="10"
+        android:ems="8"
         android:textColor="#ffff"
         android:inputType="textPersonName"
         android:hint="Name"
         tools:layout_editor_absoluteX="114dp"
         tools:layout_editor_absoluteY="211dp" />
+
+<!--    android:ems="10"-->
 
     <EditText
         android:id="@+id/productCategory"
