@@ -40,11 +40,13 @@
         android:layout_marginBottom="-75dp"
         android:drawableLeft="@drawable/ic_person_login"
         android:hint="Login"
-        android:padding="8dp"
+        android:padding="10dp"
         android:onClick="login"
         android:backgroundTint="@color/colorPrimaryDark"
         android:textColorHint="#ffff"
         android:textSize="18dp" />
+
+<!--    android:padding="8dp"-->
 
     <Button
         android:id="@+id/SignUpMain"
