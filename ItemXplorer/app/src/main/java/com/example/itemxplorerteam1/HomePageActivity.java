@@ -36,7 +36,7 @@ public class HomePageActivity extends AppCompatActivity {
 
         firebaseAuth = FirebaseAuth.getInstance();
         final FirebaseUser users = firebaseAuth.getCurrentUser();
-        welcomeText.setText("Welcome Onboard, Master!!" );
+        welcomeText.setText("Welcome Xploring, Items!!" );
 
 
         addItems.setOnClickListener(new View.OnClickListener() {

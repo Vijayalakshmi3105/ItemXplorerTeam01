@@ -1,13 +1,14 @@
 {
   "project_info": {
-    "project_number": "292490456677",
-    "project_id": "itemxplorer-f1279",
-    "storage_bucket": "itemxplorer-f1279.appspot.com"
+    "project_number": "43847352279",
+    "firebase_url": "https://xplorer-587c8-default-rtdb.firebaseio.com",
+    "project_id": "xplorer-587c8",
+    "storage_bucket": "xplorer-587c8.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:292490456677:android:8695affaf77f0c6406208c",
+        "mobilesdk_app_id": "1:43847352279:android:27dcde0ad5c04805751592",
         "android_client_info": {
           "package_name": "com.example.itemxplorerteam1"
         }
@@ -15,7 +16,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBUbYFaymc8MTi3K3tIaCMOYCNe-bY7xYw"
+          "current_key": "AIzaSyDeXgIH1klfAt9f8g_n3xQr2Ruqb4bwO90"
         }
       ],
       "services": {
