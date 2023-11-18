@@ -1,19 +1,19 @@
 # ItemXplorerTeam01
-App name: ITEMXPLORER
+App name: ItemXplorer
 
 
-TEAM 01 INFORMATION:
+Team Information:
 1. VIJAYA LAKHSMI SANKATI
 2. YOGESH NAIDU MAHAREDDY
 3. NEELIMA CHUNDRU
 4. SUMANTH REDDY NANDYALA
 
 
-App  Link:https://github.com/Vijayalakshmi3105/ItemXplorerTeam01
+Apk  Link:[https://github.com/Vijayalakshmi3105/ItemXplorerTeam01](https://github.com/Vijayalakshmi3105/ItemXplorerTeam01/blob/main/app-debug.apk)
 
 
 To login use credentials
 
-username - sumanth12@gmail.com
+username - ItemXplorer01@gmail.com
 
-password - Sumanth@123
+password - Xplorer@01
