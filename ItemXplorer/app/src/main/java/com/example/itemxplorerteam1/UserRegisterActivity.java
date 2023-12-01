@@ -138,7 +138,7 @@ public class UserRegisterActivity extends AppCompatActivity {
                                             if (task.isSuccessful()) {
 
                                                 Toast.makeText(UserRegisterActivity.this, "Registration Success", Toast.LENGTH_LONG).show();
-                                                startActivity(new Intent(UserRegisterActivity.this, HomePageActivity.class));
+                                                startActivity(new Intent(UserRegisterActivity.this, UserLoginActivity.class));
                                             } else {
                                                 //display a failure message
                                             }
